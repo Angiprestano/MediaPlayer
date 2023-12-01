@@ -9,12 +9,12 @@ public class Video extends ContenutoMultimediale implements RegolazioneLuminosit
     }
     @Override
     public void alzaVolume() {
-
+    volume++;
     }
 
     @Override
     public void abbassaVolume() {
-
+    volume--;
     }
 
 
@@ -25,11 +25,11 @@ public class Video extends ContenutoMultimediale implements RegolazioneLuminosit
 
     @Override
     public void aumentaluminosità() {
-
+        luminosità++;
     }
 
     @Override
     public void diminuisceluminosità() {
-
+    luminosità--;
     }
 }

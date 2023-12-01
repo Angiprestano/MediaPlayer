@@ -7,15 +7,15 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Inizializzazione Scanner, oggetto utile per richiedere dati in input da parte dell'utente
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Scrivi i tuoi dati e clicca play");
         String name = scanner.nextLine();
         String surname = scanner.nextLine();
-        System.out.println("Hai inserito: " + name + " "+surname);
+        System.out.println("Hai inserito: " + name + " "+ surname);
         scanner.close();
-        System.out.println("Benvenuto/a!");
+        System.out.println("Stai riproducendo:");
 
-        ContenutoMultimediale song = new Audio(13, 65);
+        ContenutoMultimediale song = new Audio(13, 30);
         System.out.println(song);
     }
 }

@@ -21,17 +21,27 @@ public String Titolo = "Don't stop me now - Queen";
 // INCREMENTIAMO IL VOLUME
     @Override
     public void alzaVolume() {
-       volume++;
-    }
+        if (volume < 10) {
+            volume++;
+            System.out.println("volume in aumento a" + volume);
+        } else {
+            System.out.println("Volume massimo");
+        }
 
+    }
 
     @Override
     public void abbassaVolume() {
-        volume--;
+        if (volume > 0) {
+            volume--;
+            System.out.println("volume diminuito a" + volume);
+        } else {
+            System.out.println("Volume minimo");
+        }
     }
 
     @Override
     public void play() {
-
+System.out.println("La canzone è partita" + volume);
     }
 }
